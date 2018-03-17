@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <!--普通button按钮-->
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="按钮1"
+        android:textSize="20sp"
+        android:background="#808080"
+        android:textColor="#DD9222"
+        android:layout_marginBottom="10dp"/>
+
+    <!--使用@drawable/来改变填充颜色和实现圆角的button按钮-->
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="按钮2"
+        android:textSize="20sp"
+        android:background="@drawable/bg_btn2"
+        android:textColor="#DD9222"
+        android:layout_below="@+id/btn_1"/>
+
+    <!--描边带圆角的button按钮-->
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_2"
+        android:background="@drawable/bg_btn3"
+        android:text="按钮3"
+        android:textColor="#DD9222"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" />
+
+    <!--实现点击变色效果的button按钮-->
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="按钮4"
+        android:textSize="20sp"
+        android:background="@drawable/bg_btn4"
+        android:textColor="#DD9222"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btn_3"
+        android:onClick="showToast"
+        android:drawableRight=""/>
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="文字1"
+        android:layout_below="@id/btn_4"
+        android:textSize="20sp"
+        android:background="#808080"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="showToast"/>
+
+</RelativeLayout>
