@@ -12,6 +12,8 @@
 
 使用类addTextChangedListener的方法：beforeTextChange()、onTextChange()、afterTextChange()
 
+在MainActivity.java里重写了类OnClick接口是类View.OnClickListener，简化了之前设置点击事件的代码
+
 ### layout文件夹
 
 新增加了activity_button.xml，配合java文件里点击事件
@@ -25,3 +27,7 @@ Android:maxLines=”” 最大显示行数
 Android:inputType=”textPassword”或者”numberPassword”或者”number”限制输入数据的类型
 
 比如：password是匿名显示，number只能输入数字
+
+新增加了activity_radio_button.xml，对应相应的java文件里的点击事件
+
+这是一个选择页面，默认勾选是android:checked="true"
