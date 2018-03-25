@@ -14,6 +14,19 @@
 
 在MainActivity.java里重写了类OnClick接口是类View.OnClickListener，简化了之前设置点击事件的代码
 
+ImageViewActivity.java，在build.gradle文件的dependencies{}里添加以下内容
+```
+implementation ("com.github.bumptech.glide:glide:4.6.1") {
+    exclude group: "com.android.support"
+}
+implementation "com.android.support:support-fragment:26.1.0"
+```
+然后同步即可使用第三方库Glide在ImageView里使用网络图片
+
+RadioButton圆形按钮控件
+
+TestActivity.java仿照今日头条的登录界面，具体UI在activity_test.xml里
+
 ### layout文件夹
 
 新增加了activity_button.xml，配合java文件里点击事件
