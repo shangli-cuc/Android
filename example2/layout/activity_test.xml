@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="登录你的头条，精彩永不流失"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_margin="30dp"/>
+
+    <EditText
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="手机号"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:background="@drawable/login_edittext_sharp"
+        android:layout_below="@+id/btn_1"
+        android:layout_margin="5dp" />
+
+    <EditText
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:background="@drawable/login_edittext_sharp"
+        android:layout_below="@+id/btn_2"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进入头条"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_below="@+id/btn_3"
+        android:background="@drawable/login_btn_selector"
+        android:layout_margin="5dp"/>
+
+    <CheckBox
+        android:id="@+id/btn_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我已阅读用户隐私协议"
+        android:textColor="#000"
+        android:layout_below="@id/btn_4"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/btn_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="账号密码登陆"
+        android:layout_below="@+id/btn_5"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="#0000FF"/>
+
+    <ImageButton
+        android:id="@+id/im_1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/wechat"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+    <ImageButton
+        android:id="@+id/im_2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/youtobe"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/im_1"
+        android:layout_margin="10dp"/>
+
+    <ImageButton
+        android:id="@+id/im_3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/facebook"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/im_2"
+        android:layout_margin="10dp"/>
+
+    <ImageButton
+        android:id="@+id/im_4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/blog"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/im_1"
+        android:layout_margin="10dp"/>
+
+    <ImageButton
+        android:id="@+id/im_5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/phone"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/im_4"
+        android:layout_margin="10dp"/>
+
+
+
+
+
+
+</RelativeLayout>
